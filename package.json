@@ -19,7 +19,6 @@
     "access": "public"
   },
   "scripts": {
-    "prepare": "nest build && npm run postbuild",
     "build": "nest build && npm run postbuild",
     "postbuild": "shx chmod +x dist/main.js",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
