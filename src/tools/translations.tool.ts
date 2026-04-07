@@ -461,7 +461,7 @@ export class WeblateTranslationsTool {
         .array(z.string())
         .optional()
         .describe(
-          'Source strings for monolingual formats (use array for plurals)',
+          'Array of strings — single element for regular, multiple for plural forms, e.g. ["Hello"]',
         ),
       context: z
         .string()
@@ -471,13 +471,13 @@ export class WeblateTranslationsTool {
         .array(z.string())
         .optional()
         .describe(
-          'Source strings for bilingual formats (use array for plurals)',
+          'Array of strings — single element for regular, multiple for plural forms, e.g. ["Hello"]',
         ),
       target: z
         .array(z.string())
         .optional()
         .describe(
-          'Target strings for bilingual formats (use array for plurals)',
+          'Array of strings — single element for regular, multiple for plural forms, e.g. ["Hallo"]',
         ),
       state: z
         .number()

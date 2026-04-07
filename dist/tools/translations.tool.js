@@ -463,7 +463,7 @@ __decorate([
             value: zod_1.z
                 .array(zod_1.z.string())
                 .optional()
-                .describe('Source strings for monolingual formats (use array for plurals)'),
+                .describe('Array of strings — single element for regular, multiple for plural forms, e.g. ["Hello"]'),
             context: zod_1.z
                 .string()
                 .optional()
@@ -471,11 +471,11 @@ __decorate([
             source: zod_1.z
                 .array(zod_1.z.string())
                 .optional()
-                .describe('Source strings for bilingual formats (use array for plurals)'),
+                .describe('Array of strings — single element for regular, multiple for plural forms, e.g. ["Hello"]'),
             target: zod_1.z
                 .array(zod_1.z.string())
                 .optional()
-                .describe('Target strings for bilingual formats (use array for plurals)'),
+                .describe('Array of strings — single element for regular, multiple for plural forms, e.g. ["Hallo"]'),
             state: zod_1.z
                 .number()
                 .optional()
